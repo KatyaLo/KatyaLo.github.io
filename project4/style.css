@@ -34,7 +34,9 @@ html,body {
 	position: absolute;
 	bottom: 20px;
 	left: calc(50% - 25px);
-	background-color: #e3c800;
+	background-image: url(drag.png);
+	background-position: center;
+	background-size: cover;
 	z-index: 1;
 }
 
