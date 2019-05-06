@@ -1,8 +1,21 @@
+@media all and (max-width: 768px) {
+	.plane {
+		width: 30vmin;
+		left: 10px;
+		transition: left 4s ease;
+	}
+}
+
+@media all and (min-width: 769px) {
+	.plane {
+		width: 200px;
+		left: 100px;
+		transition: left 4s cubic-bezier(.5, -1, .5, 2);
+	}
+}
+
 .plane {
 	position: relative;
 	cursor: pointer;
-	width: 200px;
 	height: auto;
-	left: 100px;
-	transition: left 4s cubic-bezier(.5, -1, .5, 2);
 }
