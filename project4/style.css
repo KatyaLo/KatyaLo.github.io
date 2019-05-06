@@ -1,3 +1,48 @@
+@media (max-width: 375px) {
+	.btn1 {
+		width: 26px;
+		height: 26px;
+		left: calc(50% - 13px);
+	}
+	.main {
+		padding: 10px;
+		max-width: 100%;
+	}
+	.item {
+		height: 110px;
+	}
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+	.btn1 {
+		width: 40px;
+		height: 40px;
+		left: calc(50% - 20px);
+	}
+	.main {
+		padding: 20px;
+		max-width: 100%;
+	}
+	.item {
+		height: 150px;
+	}
+}
+
+@media (min-width: 769px) {
+	.btn1 {
+		width: 50px;
+		height: 50px;
+		left: calc(50% - 25px);
+	}
+	.main {
+		padding: 50px;
+		max-width: 70%;
+	}
+	.item {
+		height: 200px;
+	}
+}
+
 html,body {
 	margin: 0;
 	height: 100%;
@@ -15,7 +60,6 @@ html,body {
 	-ms-align-items: center;
 	align-items: center;
 	position: relative;
-	/*z-index: -1;*/
 }
 
 .header:after {
@@ -29,11 +73,8 @@ html,body {
 }
 
 .btn1 {
-	width: 50px;
-	height: 50px;
 	position: absolute;
 	bottom: 20px;
-	left: calc(50% - 25px);
 	background-image: url(drag.png);
 	background-position: center;
 	background-size: cover;
@@ -48,18 +89,12 @@ html,body {
 }
 
 .main {
-	padding: 50px;
-	max-width: 70%;
 	height: 100%;
 	margin: auto;
 }
 
 .box {
 	display: flex;
-	-webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
@@ -71,7 +106,6 @@ html,body {
 
 .item {
 	flex-basis: 22%;
-	height: 200px;
 	background-color: yellow;
 	margin-bottom: 2.5%;
 	transition: 0.3s;
