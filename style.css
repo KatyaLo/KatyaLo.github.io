@@ -1,3 +1,23 @@
+@media all and (max-width: 768px) {
+	.box {
+		padding: 1vmin;
+		justify-content: center;
+	}
+	.link {
+		font-size: 10vmin;
+	}
+}
+
+@media all and (min-width: 769px) {
+	.box {
+		padding: 50px 0;
+		justify-content: space-between;
+	}
+	.link {
+		font-size: 60px;
+	}
+}
+
 * {
 	background-color: #feffdb;
 	font-family: 'Roboto', sans-serif;
@@ -11,13 +31,11 @@
 
 .box {
 	display: flex;
-	justify-content: space-between;
-	padding: 50px 0;
 	flex-wrap: wrap;
 }
 
 .title {
-	font-size: 60px;
+	font-size: 13vmin;
 	color: #ff8b00;
 	text-shadow: 3px 3px 3px #444444;
 }
@@ -25,9 +43,9 @@
 .link {
 	text-decoration: none;
 	color: #ffc60b;
-	font-size: 40px;
 	text-shadow: 3px 3px 3px #444444;
 	transition: 0.1s;
+	margin: 20px;
 }
 /*
 .link:active {
