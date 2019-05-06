@@ -1,37 +1,51 @@
 @keyframes spin {
 	0% {
 		transform: rotate(0deg) scale(1) skew(0deg);
-		border-radius: 10px;
+		border-radius: 15%;
 	}
 
 	50% {
 		transform: rotate(270deg) scale(2);
-		border-radius: 15px;
+		border-radius: 25%;
 	}
 
 	100% {
 		transform: rotate(360deg) scale(4) skew(10deg);
-		border-radius: 20px;
+		border-radius: 33%;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.box {
+		margin: 10px;
+	}
+	.lim {
+		width: 30px;
+		height: 30px;
+		margin: 20px;
+	}
+}
+
+@media all and (min-width: 501px) {
+	.box {
+		margin: 100px;
+	}
+	.lim {
+		width: 60px;
+		height: 60px;
+		margin: 50px;
 	}
 }
 
 .box {
 	height: auto;
 	display: flex;
-	margin: 100px;
-	-webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: space-around;
 }
 
 .lim {
-	width: 60px;
-	height: 60px;
 	background-color: salmon;
-	margin: 50px;
 	animation: spin 1s infinite linear alternate; /*cubic-bezier(.47,-.44,.49,1.46)*/
 }
