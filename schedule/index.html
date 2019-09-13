@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Расписание</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			box-sizing: ;
+			font-family: 'Roboto Slab', serif;
+			text-align: center;
+			color: #000;
+
+			box-sizing: border-box;
+		}
+
+		.box {
+			width: 100vw;
+			height: 100vh;
+
+			display: grid;
+			grid-template-rows: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr;
+			grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-areas: "weekday time time time time time time time"
+								 "weekday work work work work work work work"
+								 "weekday time time time time time time time"
+								 "weekday work work work work work work work"
+								 "weekday time time time time time time time"
+								 "weekday work work work work work work work"
+								 "weekday time time time time time time time"
+								 "weekday work work work work work work work"
+								 "weekday time time time time time time time"
+								 "weekday work work work work work work work"
+								 "weekday time time time time time time time"
+								 "weekday work work work work work work work"
+								 "weekday time time time time time time time"
+								 "weekday work work work work work work work";
+		}
+
+		.item {
+			border: 0.5px solid #444;
+			position: relative;
+		}
+
+		.time {
+			display: block;
+			padding: 3px;
+
+			font-size: 14px;
+			font-weight: 400;
+
+			border-top: 3px solid #000;
+		}
+
+		.weekday {
+			font-weight: 700;
+		}
+
+		.work {
+			display: flex;
+			justify-content: center;
+			-ms-align-items: center;
+			align-items: center;
+
+			font-weight: 300;
+
+			padding: 3px;
+		}
+
+		.c {
+			width: 100%;
+			height: 50%;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			border-bottom: 0.3px solid #444;
+		}
+
+		.z {
+			width: 100%;
+			height: 50%;
+			position: absolute;
+			top: 50%;
+			left: 0;
+
+			border-top: 0.3px solid #444;
+		}
+
+		.univer {
+			background-color: #f7b71d;
+		}
+
+		.job {
+			background-color: #afa939;
+		}
+
+		@media (max-width: 800px) {
+			.box {
+				width: 1200px;
+			}
+
+			.time {
+				font-size: 12px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="item time "></div>
+		<div class="item time"><span>8:30-10:05</span></div>
+		<div class="item time"><span>10:15-11:50</span></div>
+		<div class="item time"><span>12:00-13:35</span></div>
+		<div class="item time"><span>13:50-15:25</span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span></span></div>
+		
+		<div class="item weekday">Пн</div>
+		<div class="item">
+			<div class="work c univer">
+				<span>Экономика 504 сем</span>
+			</div>
+		</div>
+		<div class="item work univer">
+			<span>Алгебра 319 лек</span>
+		</div>
+		<div class="item work">
+			<div class="work c univer">
+				<span>Алгебра 502 сем</span>
+			</div>
+			<div class="work z univer">
+				<span>ОиРС НОЦ сем</span>
+			</div>
+		</div>
+		<div class="item work">
+			<div class="c univer">
+				<span>АСВТ 502 сем</span>
+			</div>
+		</div>
+		<div class="item work"></div>
+		<div class="item work"></div>
+		<div class="item work"></div>
+
+
+
+
+		<div class="item time"></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span>17:00-19:00</span></div>
+		<div class="item time"><span>19:00-20:30</span></div>
+		<div class="item time"><span>20:30-21:30</span></div>
+
+		<div class="item weekday">Вт</div>
+		<div class="item work"></div>
+		<div class="item work"></div>
+		<div class="item work"></div>
+		<div class="item work"></div>
+		<div class="item work job">
+			<span>Аэлита сайты</span>
+		</div>
+		<div class="item work job">
+			<span>Мишель роблокс</span>
+		</div>
+		<div class="item work job">
+			<span>Аэлита математика</span>
+		</div>
+
+
+
+
+		<div class="item time"></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span>13:50-15:25</span></div>
+		<div class="item time"><span>15:40-17:15</span></div>
+		<div class="item time"><span>17:20-19:20</span></div>
+		<div class="item time"><span></span></div>
+
+		<div class="item weekday">Ср</div>
+		<div class="item work"></div>
+		<div class="item work"></div>
+		<div class="item work"></div>
+		<div class="item work univer">
+			<span>ТПР 306ю лек</span>
+		</div>
+		<div class="item work univer">
+			<span>ТПР 430 сем</span>
+		</div>
+		<div class="item work job">
+			<span>Сергенев Никита Python</span>
+		</div>
+		<div class="item work"></div>
+
+
+
+
+		<div class="item time"></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span>13:50-15:25</span></div>
+		<div class="item time"><span>15:40-17:15</span></div>
+		<div class="item time"><span>17:25-19:00</span></div>
+		<div class="item time"><span>19:10-20:45</span></div>
+
+		<div class="item weekday">Чт</div>
+		<div class="item work"></div>
+		<div class="item work"></div>
+		<div class="item work"></div>
+		<div class="item work">
+			<div class="work z univer">
+				<span>ВвК 515ю лек</span>
+			</div>
+		</div>
+		<div class="item work">
+			<div class="work c univer">
+				<span>БСБД 432 лек</span>
+			</div>
+			<div class="work z univer">
+				<span>ОиРС 432 лек</span>
+			</div>
+		</div>
+		<div class="item work univer">
+			<span>БЖД 533 лек</span>
+		</div>
+		<div class="item work">
+			<div class="work c univer">
+				<span>АСВТ 502ю лек</span>
+			</div>
+			<div class="work z univer">
+				<span>БЖД 432ю сем</span>
+			</div>
+		</div>
+
+
+
+
+		<div class="item time"></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span>10:15-11:50</span></div>
+		<div class="item time"><span>12:00-13:35</span></div>
+		<div class="item time"><span>13:50-15:25</span></div>
+		<div class="item time"><span>17:00-19:00</span></div>
+		<div class="item time"><span>19:00-20:30</span></div>
+		<div class="item time"><span>20:30-21:30</span></div>
+
+		<div class="item weekday">Пт</div>
+		<div class="item work"></div>
+		<div class="item work univer">
+			<span>ТОИБАС 424ю лек</span>
+		</div>
+		<div class="item work univer">
+			<span>Экономика 533 лек</span>
+		</div>
+		<div class="item work">
+			<div class="work z univer">
+				<span>БСБД НОЦ сем</span>
+			</div>
+		</div>
+		<div class="item work job">
+			<span>Аэлита сайты</span>
+		</div>
+		<div class="item work job">
+			<span>Мишель роблокс</span>
+		</div>
+		<div class="item work job">
+			<span>Аэлита математика</span>
+		</div>
+
+
+
+
+		<div class="item time"></div>
+		<div class="item time"><span>9:00-11:00</span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span>13:50-15:25</span></div>
+		<div class="item time"><span>15:40-17:15</span></div>
+		<div class="item time"><span>17:25-19:00</span></div>
+		<div class="item time"><span></span></div>
+
+		<div class="item weekday">Сб</div>
+		<div class="item work job">
+			<span>Группа олимпиадное</span>
+		</div>
+		<div class="item work"></div>
+		<div class="item work"></div>
+		<div class="item work">
+			<div class="work c univer">
+				<span>ТОИБАС 392 сем</span>
+			</div>
+		</div>
+		<div class="item work">
+			<div class="work c univer">
+				<span>ТОИБАС 392 сем</span>
+			</div>
+		</div>
+		<div class="item work">
+			<div class="work c univer">
+				<span>ВвК 430 сем</span>
+			</div>
+		</div>
+		<div class="item work"></div>
+
+
+
+
+		<div class="item time"></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span>10:30-12:00</span></div>
+		<div class="item time"><span>13:30-15:30</span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span>17:00-19:00</span></div>
+		<div class="item time"><span></span></div>
+		<div class="item time"><span></span></div>
+
+		<div class="item weekday">Вс</div>
+		<div class="item work"></div>
+		<div class="item work job">
+			<span>Группа ScratchJr</span>
+		</div>
+		<div class="item work job">
+			<span>Родионовы роблокс</span>
+		</div>
+		<div class="item work"></div>
+		<div class="item work job">
+			<span>Группа сайты</span>
+		</div>
+		<div class="item work"></div>
+		<div class="item work"></div>
+
+
+	</div>
+</body>
+</html>
