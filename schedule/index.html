@@ -91,7 +91,11 @@
 		}
 
 		.univer {
-			background-color: #f7b71d;
+			display: flex;
+			justify-content: center;
+			-ms-align-items: center;
+			align-items: center;
+			background-color: #437070;
 		}
 
 		.job {
@@ -117,17 +121,29 @@
 
 		<div class="item time"></div>
 		<div class="item time"><span></span></div>
+		<div class="item time"><span>10:15 - 11:50</span></div>
+		<div class="item time"><span>12:00 - 13:35</span></div>
+		<div class="item time"><span>13:50 - 15:25</span></div>
 		<div class="item time"><span></span></div>
-		<div class="item time"><span></span></div>
-		<div class="item time"><span></span></div>
-		<div class="item time"><span>17:30-19:00</span></div>
-		<div class="item time"><span>19:00-21:00</span></div>
-		<div class="item time"><span></span></div>
+		<div class="item time"><span>17:30 - 19:00</span></div>
+		<div class="item time"><span>19:00 - 21:00</span></div>
 		
 		<div class="item weekday">Пн</div>
 		<div class="item work"></div>
-		<div class="item work"></div>
-		<div class="item work"></div>
+		<div class="item work">
+			<div class="univer c">
+				<span>ВКиС (л)<br>319</span>
+			</div>
+			<div class="univer z">
+				<span>ССпоИБ (л)<br>319</span>
+			</div>
+		</div>
+		<div class="item work univer">
+			<span>ОИРС (л)<br>533</span>
+		</div>
+		<div class="item work univer">
+			<span>КМЗИ (с)<br>319</span>
+		</div>
 		<div class="item work"></div>
 		<div class="item work job">
 			<span>Федя <br> Математика</span>
@@ -135,7 +151,6 @@
 		<div class="item work job">
 			<span>Грин Эльяна<br>Гарвардский</span>
 		</div>
-		<div class="item work"></div>
 
 
 		<!-- ВТОРНИК -->
@@ -145,22 +160,26 @@
 		<div class="item time"><span></span></div>
 		<div class="item time"><span></span></div>
 		<div class="item time"><span></span></div>
-		<div class="item time"><span>17:00 - 19:00</span></div>
-		<div class="item time"><span>19:00 - 20:30</span></div>
-		<div class="item time"><span></span></div>
+		<div class="item time"><span>15:40 - 17:15</span></div>
+		<div class="item time"><span>17:25 - 19:00</span></div>
+		<div class="item time"><span>19:10 - 20:45</span></div>
 
 		<div class="item weekday">Вт</div>
 		<div class="item work"></div>
 		<div class="item work"></div>
 		<div class="item work"></div>
 		<div class="item work"></div>
-		<div class="item work job">
-			<span>Аэлита <br> Сайты</span>
+		<div class="item work univer">
+			<span>ОИРС (с)<br>НОЦ</span>
 		</div>
-		<div class="item work job">
-			<span>Мишель <br> Роблокс</span>
+		<div class="item work univer">
+			<span>ЗвОС<br>306ю</span>
 		</div>
-		<div class="item work"></div>
+		<div class="item work">
+			<div class="univer z">
+				<span>МСиБД (л)<br>392</span>
+			</div>
+		</div>
 
 
 		<!-- СРЕДА -->
@@ -170,9 +189,9 @@
 		<div class="item time"><span></span></div>
 		<div class="item time"><span></span></div>
 		<div class="item time"><span></span></div>
-		<div class="item time"><span>17:20-19:20</span></div>
-		<div class="item time"><span></span></div>
-		<div class="item time"><span></span></div>
+		<div class="item time"><span>16:00 - 18:00</span></div>
+		<div class="item time"><span>18:00 - 19:30</span></div>
+		<div class="item time"><span>19:30 - 21:30</span></div>
 
 		<div class="item weekday">Ср</div>
 		<div class="item work"></div>
@@ -182,56 +201,66 @@
 		<div class="item work job">
 			<span>Сергенев Никита <br> Python</span>
 		</div>
-		<div class="item work"></div>
-		<div class="item work"></div>
+		<div class="item work job"><span>Мишель</span></div>
+		<div class="item work job"><span>Аэлита</span></div>
 
 
 		<!-- ЧЕТВЕРГ -->
 
 		<div class="item time"></div>
+		<div class="item time"><span>8:30 - 10:05</span></div>
+		<div class="item time"><span>10:15 - 11:50</span></div>
 		<div class="item time"><span></span></div>
 		<div class="item time"><span></span></div>
-		<div class="item time"><span></span></div>
-		<div class="item time"><span></span></div>
-		<div class="item time"><span>15:00-17:00</span></div>
-		<div class="item time"><span>18:00-20:00</span></div>
-		<div class="item time"><span></span></div>
+		<div class="item time"><span>15:00 - 17:00</span></div>
+		<div class="item time"><span>18:00 - 19:30</span></div>
+		<div class="item time"><span>19:30 - 21:30</span></div>
 
 		<div class="item weekday">Чт</div>
-		<div class="item work"></div>
-		<div class="item work"></div>
-		<div class="item work"></div>
-		<div class="item work"></div>
-		<div class="item work job">
-			<span>Сергей<br>Python</span>
+		<div class="item work univer">
+			<span>Экономика (л)<br>533</span>
 		</div>
-		<div class="item work job">
-			<span>Айша <br> Физика</span>
+		<div class="item work univer">
+			<span>КМЗИ (л)<br>319</span>
 		</div>
 		<div class="item work"></div>
+		<div class="item work"></div>
+		<div class="item work job"><span>Айша<br>физика</span></div>
+		<div class="item work job"><span>Мишель</span></div>
+		<div class="item work job"><span>Аэлита</span></div>
 
 
 		<!-- ПЯТНИЦА -->
 
 		<div class="item time"></div>
 		<div class="item time"><span></span></div>
-		<div class="item time"><span></span></div>
-		<div class="item time"><span></span></div>
-		<div class="item time"><span></span></div>
-		<div class="item time"><span>17:00-19:00</span></div>
-		<div class="item time"><span>19:00-20:30</span></div>
-		<div class="item time"><span>21:00-23:00</span></div>
+		<div class="item time"><span>12:00 - 13:35</span></div>
+		<div class="item time"><span>13:50 - 15:25</span></div>
+		<div class="item time"><span>15:40 - 17:15</span></div>
+		<div class="item time"><span>17:25 - 19:00</span></div>
+		<div class="item time"><span>19:10 - 20:45</span></div>
+		<div class="item time"><span>21:00 - 23:00</span></div>
 
 		<div class="item weekday">Пт</div>
 		<div class="item work"></div>
-		<div class="item work"></div>
-		<div class="item work"></div>
-		<div class="item work"></div>
-		<div class="item work job">
-			<span>Аэлита <br> Сайты</span>
+		<div class="item work">
+			<div class="univer z">
+				<span>Экономика (с)<br>424ю</span>
+			</div>
 		</div>
-		<div class="item work job">
-			<span>Мишель <br> Роблокс</span>
+		<div class="item work univer">
+			<span>ССпоИБ (с)<br>НОЦ</span>
+		</div>
+		<div class="item work univer">
+			<span>ВКиС (с)<br>НОЦ</span>
+		</div>
+		<div class="item work univer">
+			<span>ЗвОС (л)<br>424ю</span>
+		</div>
+		<div class="item work">
+			<div class="univer c">
+				<span>ВКиС (л)<br>424ю</span>
+			</div>
 		</div>
 		<div class="item work job">
 			<span>Александр<br>Python</span>
@@ -244,8 +273,8 @@
 		<div class="item time"><span></span></div>
 		<div class="item time"><span>10:00 - 12:00</span></div>
 		<div class="item time"><span>12:00 - 14:00</span></div>
-		<div class="item time"><span>14:30-16:30</span></div>
-		<div class="item time"><span>17:00-19:00</span></div>
+		<div class="item time"><span>14:30 - 16:30</span></div>
+		<div class="item time"><span>17:00 - 19:00</span></div>
 		<div class="item time"><span>19:00 - 21:00</span></div>
 		<div class="item time"><span></span></div>
 
@@ -273,18 +302,18 @@
 
 		<div class="item time"></div>
 		<div class="item time"><span></span></div>
-		<div class="item time"><span></span></div>
-		<div class="item time"><span></span></div>
-		<div class="item time"><span></span></div>
-		<div class="item time"><span>17:00-19:00</span></div>
+		<div class="item time"><span>10:00 - 12:00</span></div>
+		<div class="item time"><span>12:15 - 14:15</span></div>
+		<div class="item time"><span>14:45 - 16:15</span></div>
+		<div class="item time"><span>17:00 - 19:00</span></div>
 		<div class="item time"><span></span></div>
 		<div class="item time"><span></span></div>
 
 		<div class="item weekday">Вс</div>
 		<div class="item work"></div>
-		<div class="item work"></div>
-		<div class="item work"></div>
-		<div class="item work"></div>
+		<div class="item work job"><span>Группа<br>Роблокс<br>Тульская</span></div>
+		<div class="item work job"><span>Группа<br>Юнити<br>Тульская</span></div>
+		<div class="item work job"><span>Сергей<br>Python</span></div>
 		<div class="item work job">
 			<span>Группа<br>Python</span>
 		</div>
