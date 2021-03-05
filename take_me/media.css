@@ -1,0 +1,176 @@
+@media (max-width: 1024px) {
+	.title_feed {
+		font-size: 24px;
+	}
+	.text_feed {
+		height: 120px;
+	}
+	.sub_box {
+		margin-top: 50px;
+	}
+}
+@media (max-width: 900px) {
+	.nav {
+		height: 100px;
+		justify-content: space-evenly;
+	}
+	.logo {
+		font-size: 38px;
+	}
+	.toolbar {
+		width: calc(100% - 155px - 50px);
+	}
+	.item {
+		font-size: 16px;
+	}
+
+	.un_title {
+		font-size: 38px;
+	}
+	.un_text {
+		font-size: 14px;
+	}
+
+	.feedback {
+		margin: 7px;
+		width: calc(100% / 3 - 14px);
+	}
+	.title_feed {
+		font-size: 22px;
+	}
+	.text_feed {
+		font-size: 14px;
+	}
+	.stars img {
+		width: 14px;
+		height: 14px;
+	}
+	.numb {
+		font-size: 12px;
+	}
+
+	.sub_box {
+		margin-top: 50px;
+		margin-right: 100px;
+	}
+	.sub_title {
+		font-size: 42px;
+	}
+}
+@media (max-width: 790px) {
+	.nav {
+		height: 85px;
+	}
+	.logo {
+		width: 145px;
+		font-size: 36px;
+	}
+	.item {
+		font-size: 14px;
+	}
+
+	.container {
+		padding-right: 8%;
+	}
+
+	.feedback {
+		margin: 1px;
+		width: calc(100% / 3 - 2px);
+	}
+	.title_feed {
+		font-size: 18px;
+	}
+	.text_feed {
+		font-size: 12px;
+		padding-right: 5px;
+	}
+	.rate {
+		margin-top: 10px;
+		padding-right: 10px;
+	}
+	.stars img {
+		width: 14px;
+		height: 14px;
+	}
+	.numb {
+		font-size: 10px;
+	}
+	.activ {
+		min-width: calc(100% / 2 - 20px);
+		margin: 30px 10px;
+		padding: 10px;
+	}
+	.box_title {
+		font-size: 26px;
+	}
+	.box_text {
+		font-size: 12px;
+	}
+
+	.sub_but {
+		width: 200px;
+	}
+	.sub_box {
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 720px) {
+	.toolbar {
+		flex-wrap: wrap;
+	}
+	.item {
+		width: calc(100% / 3);
+		height: 50%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.title {
+		font-size: 28px;
+	}
+	.text {
+		font-size: 14px;
+	}
+	.form {
+		width: 90%;
+		margin: 0 auto;
+	}
+	input {
+		font-size: 14px;
+	}
+	.btn {
+		font-size: 14px;
+	}
+	.popup {
+		width: 76%;
+		padding: 10px 0;
+	}
+	.checkbox_text {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 660px) {
+	.feedback {
+		margin: 15px;
+		width: calc(100% / 2 - 30px);
+	}
+	.uni_feedback {
+		display: flex;
+		flex-wrap: wrap;
+		overflow: hidden;
+		height: 485px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 507px) {
+	.feedback {
+		width: calc(100% - 30px);
+	}
+	.activ {
+		min-width: 100%;
+		margin: 30px 0;
+	}
+}
